@@ -1,6 +1,9 @@
 body{
 	background-color: #2013aa;
-	font-family: 'josefin Sans', Sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 img{
 	position: absolute;
@@ -36,12 +39,6 @@ label{
 	border-radius: 5px;
 	width: 100%
 }
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
   .sidebar{
     position: fixed;
     height: 100%;
