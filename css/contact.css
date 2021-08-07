@@ -290,6 +290,105 @@ nav .profile-details i{
   padding: 10px;
   font-size: 18px;
 }
+
+/*----------------footer-----------*/
+.footer{
+	background: #000;
+	color:#fff;
+	font-size:18px;
+	padding: 60px 0 20px;
+}
+.footer p{
+	color:#fff;
+}
+.footer h3{
+	color:#fff;
+	margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+  text-align: center;
+}
+.footer-col-2{
+	flex:1;
+}
+.footer-col-3{
+	flex-basis: 12%;
+}
+ul{
+	list-style-type: none;
+}
+.app-logo{
+	margin-top: 20px;
+}
+.app-logo img{
+	width:140px;
+}
+.footer hr{
+	border:none;
+	background: #b5b5b5;
+	height:1px;
+	margin: 20px;
+	text-align: center;
+}
+.copyright{
+    text-align: center;
+    color: #fff;
+}    
+/* social icon */
+.social-icon {
+  padding: 0;
+}
+.social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+}
+.social-icon li a {
+  background: #f0f0f0;
+  border-radius: 50%;
+  color: #5C5C5C;
+  font-size: 16px;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+  margin-top: 12px;
+  margin-right: 16px;
+  top: 0;
+  position: relative;
+  padding: 0;
+}
+.social-icon li a:hover {
+  background: #F6D76B;
+  top: 5px;
+}  
+
+#myBtn {
+  display: none;
+  position: relative;
+  bottom: 20px;
+  left:1170px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: rgb(5, 4, 80);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 2px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
 @media (max-width:991px){
   .contact{
     padding: 50px;
@@ -299,5 +398,54 @@ nav .profile-details i{
   }
   .container .contactInfo{
     width:100%;
+  }
+}
+
+@media (max-width: 1240px) {
+  .sidebar{
+    width: 60px;
+  }
+  .sidebar.active{
+    width: 220px;
+  }
+  .home-section{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section{
+     width: calc(100% - 220px); 
+    overflow: hidden;
+    left: 220px;
+  }
+  .home-section nav{
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .sidebar.active ~ .home-section nav{
+    width: calc(100% - 220px);
+    left: 220px;
+  }
+}
+@media (max-width: 700px) {
+  nav .sidebar-button .dashboard,
+  nav .profile-details .admin_name,
+  nav .profile-details i{
+    display: none;
+  }
+  .home-section nav .profile-details{
+    height: 50px;
+    min-width: 40px;
+  }
+  .home-content .sales-boxes .sales-details{
+    width: 560px;
+  }
+}
+@media (max-width: 550px) {
+  .overview-boxes .box{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .sidebar.active ~ .home-section nav .profile-details{
+    display: none;
   }
 }
