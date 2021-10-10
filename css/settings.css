@@ -178,19 +178,7 @@ nav .profile-details i{
     text-align: center;
     color: #0A2558;
   }
-  a,
-p,
-li,
-ul,
-img,
-h1,
-h2,
-h3{
-    -webkit-tap-highlight-color: transparent;
-
-}
-
-*{
+  *{
     padding: 0ox;
     margin: 0px;
     box-sizing: border-box;
@@ -259,7 +247,7 @@ body{
 
 .logout-btn{
     text-align: right;
-    background-color: ;
+    background-color: #0a6cff;
     color: white;
     border: none;
     padding: 8px 28px;
@@ -335,7 +323,7 @@ body{
 /* Section Right */
 
 .sect-left{
-    width: 78%;
+    width: 100%;
     background-color: white;
     height: 116vh;
     background-color: white;
@@ -372,11 +360,12 @@ body{
     margin: 16px 0px;
 }
 
-.btns button:first-child{
+.btns button:nth-child(even)
+{
     border: none;
     background-color: white;
     padding: 6px 20px;
-    color: #0a6cff;
+    color: #0A2558;
     font-size: 15px;
     font-weight: 600;
     border-radius: 6px;
@@ -384,11 +373,12 @@ body{
     cursor: pointer;
     margin-right: 10px;
 }
-.btns button:last-child{
+.btns button:nth-child(odd)
+{
     border: none;
     background-color: white;
     padding: 6px 20px;
-    color: #585d67;
+    color: #0A2558;
     font-size: 15px;
     font-weight: 600;
     border-radius: 6px;
@@ -507,9 +497,9 @@ input:focus{
 
 .save-btn{
     position: relative;
-    /* left: 817e4px; */
+    /* left: 818px; */
     width: 100%;
-    margin-top: 40px;
+    margin-top: 30px;
 
     /* -webkit-tap-highlight-color: transparent; */
 }
@@ -562,14 +552,14 @@ input:focus{
     display: none;
     position: absolute;
     top: 82px;
-    left: 150px;
+    left: 348px;
     width: 75.5%;
 }
 /* 
 #notificationSection {
     display: block;
     position: absolute;
-    top: 30px;
+    top: 70px;
     width: 89%;
 } */
 

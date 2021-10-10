@@ -1,156 +1,219 @@
 <!DOCTYPE html>
+<!----Coded by Nirmiti-->
 <html lang="en">
-
 <head>
- 	<title>Feedback Form</title>
- 	<meta charset="utf-8">
- 	<meta name="viewport" content="width=device-width, initial-scale=1">
- 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">		
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/ea4e4d190f.js" crossorigin="anonymous"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 	<link rel="stylesheet" href="css/feedback.css">
-
-
+	<title>Help & Feedback</title>
 </head>
+<body>
 
-<body>	
-    <div class="sidebar">
-        <div class="logo-details">
-          <i class='bx bxl-c-plus-plus'></i>
-          <span class="logo_name">Stock Portfolio</span>
+<!----------Nav side bar-->
+<div class="sidebar">
+	<div class="logo-details">
+	  <i class="bi bi-bar-chart-line-fill"></i>
+	  <span class="logo_name">Stock Portfolio</span>
+	</div>
+<ul class="nav-links">
+  <li>
+	<a href="home.html">
+	  <i class='bx bxs-home' ></i>
+	  <span class="links_name">Home</span>
+	</a>
+  </li>
+  <li>
+	<a href="news.html">
+	  <i class='bx bx-box' ></i>
+	  <span class="links_name">News</span>
+	</a>
+  </li>
+  <li>
+	<a href="Dashboard.html">
+	  <i class='bx bx-list-ul' ></i>
+	  <span class="links_name">Dashboard</span>
+	</a>
+  </li>
+  <li>
+	<a href="Add Portfolio.html">
+	  <i class='bx bx-user-plus'></i>
+	  <span class="links_name">Add Portfolio</span>
+	</a>
+  </li>
+  <li>
+	<a href="Stock.html">
+	  <i class='bx bx-coin-stack' ></i>
+	  <span class="links_name">Stock</span>
+	</a>
+  </li>
+  <li>
+	<a href="Mutual Funds.html">
+	  <i class='bx bx-pie-chart-alt-2' ></i>
+	  <span class="links_name">Mutual Funds</span>
+	</a>
+  </li>
+  <li>
+	<a href="watchlist.html">
+	  <i class='bx bx-book-alt' ></i>
+	  <span class="links_name">Watch List</span>
+	</a>
+  </li>
+  <li>
+	<a href="subscription.html">
+	  <i class='bx bxs-cart' ></i>
+	  <span class="links_name">Premium</span>
+	</a>
+  </li>
+  <li>
+	<a href="feedback.html">
+	  <i class='bx bx-heart' ></i>
+	  <span class="links_name">Help & Feedback</span>
+	</a>
+  </li>
+  <li>
+	<a href="Settings.html">
+	  <i class='bx bx-cog' ></i>
+	  <span class="links_name">Setting</span>
+	</a>
+  </li>
+  <li class="log_out">
+	<a href="#">
+	  <i class='bx bx-log-out'></i>
+	  <span class="links_name">Log out</span>
+	</a>
+  </li>
+</ul>
+</div>
+<!----------hOME section-->
+	  <section class ="home-section">
+		<nav>
+		  <div class="sidebar-button">
+			<i class='bx bx-menu sidebarBtn'></i>
+			<span class="dashboard">Help & Feedback</span>
+		  </div>
+		  <div class="search-box">
+			<input type="text" placeholder="Search...">
+			<i class='bx bx-search' ></i>
+		  </div>
+		  <div class="profile-details">
+			<img src="images/profile.jpg" alt="">
+			<span class="admin_name"></span>
+			<i class='bx bx-chevron-down' ></i>
+		  </div>
+		</nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!----------Feedback Form-->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+                    
+                    <h1 class="text-center mt-5 font-weight-bold"></h1>
+                    <hr class="bg-white">
+                    <h1 class="text-center">Please write your feedback below:</h1>
+                    <h3 class="mt-4">How do you rate your overall experience?</h3>
+        
+                    <form>
+                        <label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
+                        <label class="radio-inline"><input type="radio" name="experience" value="bad">Average</label>
+                        <label class="radio-inline"><input type="radio" name="experience" value="bad">Good</label>
+        
+                    </div>
+                    </div>					
+        
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <label class="col-md-4">Full Name*<br>
+                            <input type="text" id="text" required="" placeholder="Abdul Rafay"></label>
+        
+                            <label class="col-md-4">Email*<br>
+                            <input type="text" id="text" required="" placeholder="theprovider@gmail.com"></label>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <label class="col-md-4">Age*<br>
+                            <input type="number" id="text" required="" placeholder="25"></label>
+        
+                            <label class="col-md-4">Phone*<br>
+                            <input type="number" id="text" required="" placeholder="+92123456789"></label>
+                    </div>
+        
+                    <div class="row">
+                        <div class="col-md-2"></div>
+                        <label class="col-md-8">Message*<br>
+                            <textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label>
+                    </div>
+        
+                                <div class="row">
+                        <div class="col-md-2"></div>
+                        <button class="btn btn-primary" style="width: 50%; margin-left: 03%; padding: 05px 0;">Submit</button>
+                    </div>
+                    </form>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
         </div>
-          <ul class="nav-links">
-            <li>
-              <a href="#" class="active">
-                <i class='bx bx-grid-alt' ></i>
-                <span class="links_name">Dashboard</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-box' ></i>
-                <span class="links_name">Market</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-list-ul' ></i>
-                <span class="links_name">Add Portfolio</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-pie-chart-alt-2' ></i>
-                <span class="links_name">Mutual Funds</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-coin-stack' ></i>
-                <span class="links_name">Stock</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-book-alt' ></i>
-                <span class="links_name">Watch List</span>
-              </a>
-            </li>
-            
-            <li>
-              <a href="#">
-                <i class='bx bx-message' ></i>
-                <span class="links_name">Premium</span>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class='bx bx-heart' ></i>
-                <span class="links_name">Help & Feedback</span>
-              </a>
-            </li>
-            <li>
-              <a href="Settings.html"></a>
-                <i class='bx bx-cog' ></i>
-                <span class="links_name">Setting</span>
-              </a>
-            </li>
-            <li class="log_out">
-              <a href="#">
-                <i class='bx bx-log-out'></i>
-                <span class="links_name">Log out</span>
-              </a>
-            </li>
-          </ul>
+        <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>FAQS</h6>
+            <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="">Dashboard</a></li>
+              <li><a href="">News</a></li>
+              <li><a href="">Settings</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
       </div>
-      <section class="home-section">
-        <nav>
-          <div class="sidebar-button">
-            <i class='bx bx-menu sidebarBtn'></i>
-            <span class="dashboard">Help & Feedback</span>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="#">Stock Portfolio Management</a>.
+            </p>
           </div>
-          <div class="search-box">
-            <input type="text" placeholder="Search...">
-            <i class='bx bx-search' ></i>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
           </div>
-          <div class="profile-details">
-            <img src="images/profile.jpg" alt="">
-            <span class="admin_name">Sawan Raina</span>
-            <i class='bx bx-chevron-down' ></i>
-          </div>
-        </nav>
-<div class="view">
-	<img src="1.svg">
-</div>
-
-<div class="container">
-	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			
-			<h1 class="text-center mt-5 font-weight-bold"></h1>
-			<hr class="bg-white">
-			<h6 class="text-center">Please write your feedback below:</h6>
-			<h3 class="mt-4">How do you rate your overall experience?</h3>
-
-			<form>
-				<label class="radio-inline"><input type="radio" name="experience" value="bad">Bad</label>
-				<label class="radio-inline"><input type="radio" name="experience" value="bad">Average</label>
-				<label class="radio-inline"><input type="radio" name="experience" value="bad">Good</label>
-
-			</div>
-			</div>					
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-4">Full Name*<br>
-					<input type="text" id="text" required="" placeholder="Abdul Rafay"></label>
-
-					<label class="col-md-4">Email*<br>
-					<input type="text" id="text" required="" placeholder="theprovider@gmail.com"></label>
-			</div>
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-4">Age*<br>
-					<input type="number" id="text" required="" placeholder="25"></label>
-
-					<label class="col-md-4">Phone*<br>
-					<input type="number" id="text" required="" placeholder="+92123456789"></label>
-			</div>
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-8">Message*<br>
-					<textarea id="message" required="" placeholder="Write yor message here" cols="48" rows="5"></textarea></label>
-			</div>
-
-						<div class="row">
-				<div class="col-md-2"></div>
-				<button class="btn btn-primary" style="width: 53.5%; position: absolute; margin-left: 15%;">Submit</button>
-			</div>
-			</form>
-</div>
-
-</body>
-</html>  
+        </div>
+      </div>
+</footer>
+        <script>
+          let sidebar = document.querySelector(".sidebar");
+       let sidebarBtn = document.querySelector(".sidebarBtn");
+       sidebarBtn.onclick = function() {
+         sidebar.classList.toggle("active");
+         if(sidebar.classList.contains("active")){
+         sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+       }else
+         sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+       }
+        </script>
+        
+        </body>
+        </html>  
